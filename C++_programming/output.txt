@@ -1,0 +1,9 @@
+size of double 8
+b=97
+size of int 4
+size of float 4
+size of bool 1
+4294967294
+2
+size of short 2
+size of long 4
