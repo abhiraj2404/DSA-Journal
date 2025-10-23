@@ -15,9 +15,7 @@ void reverse(vector<int> &arr, int start, int end)
     while (left < right)
     {
         // swap
-        int temp = arr[left];
-        arr[left] = arr[right];
-        arr[right] = temp;
+        swap(arr[left], arr[right]);
 
         // update values
         left++;
