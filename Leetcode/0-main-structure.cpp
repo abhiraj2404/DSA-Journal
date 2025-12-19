@@ -23,7 +23,6 @@ int main() {
     string input = "XIV";
     // vector<int> input = {3,4,1,2};
     
-    cout << "Testing with input: " << endl;
     int result = sol.someFunction(input);
     
     cout << "Result: " << result << endl;
