@@ -10,7 +10,7 @@ using namespace std;
 
 class Solution {
 public:
-    int someFunction(string s) {
+    int someFunction(vector<int>& s) {
 
     }
 };
@@ -20,8 +20,8 @@ int main() {
     Solution sol;
     
     // Test with some input
-    string input = "XIV";
-    // vector<int> input = {3,4,1,2};
+    // string input = "XIV";
+    vector<int> input = {3,4,1,2};
     
     int result = sol.someFunction(input);
     
