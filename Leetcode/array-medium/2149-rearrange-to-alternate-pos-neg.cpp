@@ -16,34 +16,22 @@ public:
     vector<int> rearrangeArray(vector<int> &nums)
     {
         int n = nums.size();
-        int countp = 0, countn = 0;
+        vector<int> ans(n, 0);
+        int pos = 0, neg = 1;
         for (int i = 0; i < n; i++)
         {
-            cout << "num[i]=" << nums[i] << " ";
             if (nums[i] > 0)
             {
-                countp++;
-                if (nums[2 * countp - 2] < 0)
-                    swap(nums[2 * countp - 2], nums[i]);
+                ans[pos] = nums[i];
+                pos = pos + 2;
             }
             else
             {
-                countn++;
-                if (nums[2 * countn - 1] > 0)
-                {
-                    swap(nums[2 * countn - 1], nums[i]);
-                    cout << "inside negative if";
-                }
+                ans[neg] = nums[i];
+                neg = neg + 2;
             }
-
-            for (auto i : nums)
-            {
-                cout << i << " , ";
-            };
-            cout << endl;
         }
-
-        return nums;
+        return ans;
     }
 };
 

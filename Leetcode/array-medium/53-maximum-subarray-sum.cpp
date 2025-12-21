@@ -18,14 +18,14 @@ public:
         // CALLED KADANE'S ALGORITHM (only carry forward positive SUM. If SUM becomes negative, reset to 0)
         for (int i = 0; i < n; i++)
         {
-            if (sum == 0)
-                start = i;
+            // if (sum == 0)
+            //     start = i;
             sum += nums[i];
             if (sum > maxi)
             {
                 maxi = sum;
-                maxistart = start;
-                maxiend = i;
+                // maxistart = start;
+                // maxiend = i;
             }
 
             if (sum < 0)
@@ -33,7 +33,7 @@ public:
                 sum = 0;
             }
         }
-        cout << maxistart << "," << maxiend << endl;
+        // cout << maxistart << "," << maxiend << endl;
 
         return maxi;
     }
