@@ -26,10 +26,10 @@ public:
             {
                 prefixmap[sum] = i;
             }
-            for (auto i : prefixmap)
-            {
-                cout << i.first << ":" << i.second << ",";
-            }
+            // for (auto i : prefixmap)
+            // {
+            //     cout << i.first << ":" << i.second << ",";
+            // }
             if (sum == k)
             {
                 len = max(i + 1, len);
